@@ -1457,7 +1457,7 @@
 
                         <div class="reason"><strong>Nineteenthly,</strong> your heart, though wounded by life's cruel arrows, continues to love with a depth that defies comprehension. You are more than what the books say—you captivate everyone with your charm and wisdom.</div>
 
-                        <div class="reason"><strong>Finally, and most importantly, as you celebrate your 20th,</strong> you are deserving of love—most especially from your own.
+                        <div class="reason"><strong>Finally, as you celebrate your 20th,</strong> please know that you are deserving of love—most especially from your own.
                             Not for what you accomplish, not for what you can only provide, but simply for the wonderful soul that you are. 
                             You will always be deserving of a love more than what humans could give; one that is eternal, devoted, and everlasting. Always remember that you are appreciated, Erin. You are a gift to this world, and I am grateful to know you.
                         </div>
@@ -1763,20 +1763,20 @@
         function celebrateBirthday() {
             stopListening();
             cakeMessage.textContent = '🎉 Happy 20th Birthday, Erin! 🎉';
-            micInstruction.textContent = 'Wish granted! 💝';
+            micInstruction.textContent = 'Wish granted!💝';
             
             // Vibrate celebration pattern on mobile
             if (navigator.vibrate) {
-                navigator.vibrate([200, 100, 200, 100, 200]);
+                navigator.vibrate([100, 50, 100, 50, 100]);
             }
             
             // Massive confetti celebration
-            for (let i = 0; i < 100; i++) {
+            for (let i = 0; i < 80; i++) {
                 setTimeout(() => {
                     const x = Math.random() * window.innerWidth;
                     const y = Math.random() * window.innerHeight;
                     createSparkle(x, y);
-                }, i * 20);
+                }, i * 10);
             }
 
             // Hide cake and mic, show the main button
